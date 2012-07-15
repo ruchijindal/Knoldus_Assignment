@@ -1,0 +1,17 @@
+							Point of Sale Terminal
+This Application has Three Classes.
+A.	Shop : It is a companion object.  There is no need of create difference instances of a shop.  
+It has a List of Products. Each Product has three Entities 1. Product_id 	2.  Product_Name         3 .Product Description.
+  addNewProduct: Method Add the Product  in the list. 
+
+B.	Catalog : It is a companion object.  Catalog is same for all the items and terminals.  
+It has a List of Catalog-Price-Indes . Each index has three Entities 1. Product_id 	2.  Quantity         3 .Price
+  setPrice: Method Add the new catalog index in the list. 
+
+C.	Terminal : This Class Take cares of all the crucial calculation. It scans the Trolley Items and calculate the actual price using price catalog.
+      Scan:  This method scans the Items
+	  getTrolleyPrice : Returns the total price of scaned items.
+
+
+ Use Case Test File:  test/Scala/Test_POS.scala
+
